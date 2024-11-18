@@ -27,6 +27,7 @@ header {
 }
 
 nav {
+    z-index: 3;
     width: 100vw;
     display: flex;
     height: 5vh;
@@ -63,7 +64,7 @@ nav ul li .dropdown-menu {
     left: 0;
     min-width: 150px; 
     padding: 0;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.3s ease;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 nav ul li .dropdown-menu li {
@@ -94,8 +95,9 @@ footer{
     left: 0;
     color: gray;
     background-color: transparent;
+    z-index: 3;
 }
-a {
+nav a {
     color: white;
     position: relative;
     text-decoration: none;
@@ -105,24 +107,24 @@ a {
 
 }
 
-a::after {
+nav a::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
     background: white;
-    transition: width 0.5s ease;
+    transition: width 0.3s ease;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
-a:hover::after {
+nav a:hover::after {
     width: 100%;
 }
 header h1{
     font-size: 48px;
-    transition: 0.5s ease-out;
+    transition: 0.3s ease-out;
 }
 header h1:hover{
     text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
@@ -138,7 +140,145 @@ h2 {
     justify-content: space-around;
 }
 .badge {
+    width: 24vw;
+    height: 24vw;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+.badge::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: inherit;
+    background-position: inherit;
+    background-repeat: inherit;
+    background-image: inherit;
+    z-index: 1;
+    transition: filter 0.3s ease;
+}
+
+.band-name{
+    position: absolute;
+    color: white;
+    text-shadow: -3px 3px 0 black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+.badge:hover::before {
+    filter: blur(4px);
+}
+.badge:hover .band-name{
+    opacity: 1;
+}
+
+#Metallica {
+    background-image: url(/refs/Metallica.jpg);
+}
+#Rammstein {
+    background-image: url(/refs/rammstein.jpg);
+}
+#BlackSabbath {
+    background-image: url(/refs/BlackSabbath.jpg);
+}
+#Ghost {
+    background-image: url(/refs/ghost.jpg);
+}
+#BMTH {
+    background-image: url(/refs/BringMeTheHorizon.jpg);
+}
+#SleepToken {
+    background-image: url(/refs/sleep-token.jpg);
+}
+#Spiritbox{
+    background-image: url(/refs/Spiritbox.jpg);
+}
+#Gojira {
+    background-image: url(/refs/gojira.jpg);
+}
+#LinkinPark {
+    background-image: url(/refs/LinkinPark.jpg);
+}
+#Korn {
+    background-image: url(/refs/Korn.jpg);
+}
+#Slipknot {
+    background-image: url(/refs/Slipknot.jpg);
+}
+#SOAD {
+    background-image: url(/refs/Soad.jpg);
+}
+#Deftones {
+    background-image: url(/refs/deftones.jpg);
+}
+#Evanescence {
+    background-image: url(/refs/evanescensce.jpg);
+}
+#Disturbed {
+    background-image: url(/refs/disturbed.jpg);
+}
+#LimpBizkit {
+    background-image: url(/refs/LimpBizkit.jpg);
+}
+#Nirvana {
+    background-image: url(/refs/Nirvana.jpg);
+}
+#Radiohead {
+    background-image: url(/refs/Radiohead.png);
+}
+#TOP {
+    background-image: url(/refs/TOP.jpg);
+}
+#NBT {
+    background-image: url(/refs/NBT.jpg);
+}
+#RoyalBlood {
+    background-image: url(/refs/Royalblood.jpg);
+}
+#Fontaines {
+    background-image: url(/refs/Fontaines.jpg);
+}
+#Muse {
+    background-image: url(/refs/Muse.jpg);
+}
+#EnterShikari {
+    background-image: url(/refs/EnterShikari.jpg);
+}
+#DaftPunk {
+    background-image: url(/refs/daftpunk.jpg);
+}
+#Justice {
+    background-image: url(/refs/Justice.jpg);
+}
+#Madeon {
+    background-image: url(/refs/Madeon.jpg);
+}
+#Gesaffelstein {
+    background-image: url(/refs/Gesaffelstein.jpg);
+}
+#Porter {
+    background-image: url(/refs/PorterRobinson.png);
+}
+#Deadmau5 {
+    background-image: url(/refs/Deadmau5.jpg);
+}
+#Rezz {
+    background-image: url(/refs/Rezz.jpg);
+}
+#Pendulum {
+    background-image: url(/refs/pendulum.png);
 }
 
 @keyframes gradientAnimation {
