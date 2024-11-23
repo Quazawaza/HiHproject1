@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="tiles.css">
     <title>Ulubieni Muzycy</title>
+    <style>
+        header {
+            background-color: blueviolet;
+            background: linear-gradient(90deg, #000000, #6a0dad, #000000);
+            background-size: 300% 300%;
+            animation: gradientAnimation 5s ease-in-out infinite;
+        }
+    
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+    
 </head>
 <body>
     <nav>
@@ -29,14 +51,14 @@
         
         <h2>Metal</h2> 
         <div class="container" id="metal">
-            <a class="badge" id="Metallica"><span class="band-name">Metallica</span></a>
-            <a class="badge" id="Rammstein"><span class="band-name">Rammstein</span></a>
-            <a class="badge" id="BlackSabbath"><span class="band-name">Black Sabbath</span></a>
-            <a class="badge" id="Ghost"><span class="band-name">Ghost</span></a>
-            <a class="badge" id="BMTH"><span class="band-name">Bring Me The Horizon</span></a>
-            <a class="badge" id="SleepToken"><span class="band-name">Sleep Token</span></a>
-            <a class="badge" id="Spiritbox"><span class="band-name">Spiritbox</span></a>
-            <a class="badge" id="Gojira"><span class="band-name">Gojira</span></a>
+            <a href="/pages/metallica.html" class="badge" id="Metallica"><span class="band-name">Metallica</span></a>
+            <a href="/pages/rammstein.html" class="badge" id="Rammstein"><span class="band-name">Rammstein</span></a>
+            <a href="/pages/blacksabbath.html" class="badge" id="BlackSabbath"><span class="band-name">Black Sabbath</span></a>
+            <a href="/pages/ghost.html" class="badge" id="Ghost"><span class="band-name">Ghost</span></a>
+            <a href="/pages/bmth.html" class="badge" id="BMTH"><span class="band-name">Bring Me The Horizon</span></a>
+            <a href="/pages/sleeptoken.html" class="badge" id="SleepToken"><span class="band-name">Sleep Token</span></a>
+            <a href="/pages/spiritbox.html" class="badge" id="Spiritbox"><span class="band-name">Spiritbox</span></a>
+            <a href="/pages/gojira.html" class="badge" id="Gojira"><span class="band-name">Gojira</span></a>
         </div>
         
         <h2>Nu-Metal</h2>
@@ -74,7 +96,6 @@
             <a class="badge" id="Rezz"><span class="band-name">Rezz</span></a>
             <a class="badge" id="Pendulum"><span class="band-name">Pendulum</span></a>
         </div>
-        
     </main>
     <footer>
         <p>Tomasz Ciurkowski 2024 EiT 203191</p>
