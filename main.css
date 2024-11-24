@@ -180,3 +180,63 @@ h2 {
 .badge:hover .band-name{
     opacity: 1;
 }
+.menu-toggle {
+    display: none;
+}
+.burger-menu {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        padding: 10px;
+        list-style: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu-toggle:checked + .burger-menu + ul {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: 30px;
+        margin: 10px;
+    }
+
+    .burger-menu span {
+        margin: 3px;
+        padding: 2px;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+    }
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: 20px; 
+        background: none;
+        padding: 0;
+        max-height: none; 
+        box-shadow: none; 
+        z-index: 5;
+    }
+
+    nav ul li {
+        margin: 10px;
+        text-align: center;
+    }
+    .band-name {
+        font-size: 10px;
+        text-align: center;
+    }
+
+}
