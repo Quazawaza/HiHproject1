@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O stronie</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        header {
+            background-color: blueviolet;
+            background: linear-gradient(90deg, #000000, #6a0dad, #000000);
+            background-size: 300% 300%;
+            animation: gradientAnimation 5s ease-in-out infinite;
+        }
+        section {
+            text-align: center;
+            margin-left: 10vw;
+            width: 80vw;
+        }
+        p {
+            padding-top: 10px;
+        }
+    
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav> 
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>     
+        <ul>
+            <li class="dropdown">
+                <a href="index.html">Strona Główna</a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html#metal">Metal</a></li>
+                    <li><a href="index.html#nu-metal">Nu-Metal</a></li>
+                    <li><a href="index.html#rock">Rock</a></li>
+                    <li><a href="index.html#elektroniczna">Elektroniczna</a></li>
+                </ul>
+            </li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="about.html">O Stronie</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Ulubieni muzycy</h1>
+    </header>
+    <section>
+        <h2>O tej stronie</h2>
+        <p>Witaj na stronie poświęconej moim ulubionym muzykom! Znajdziesz tutaj informacje o artystach i zespołach, których muzyka jest mi szczególnie bliska. Strona jest podzielona na różne gatunki muzyczne, takie jak Metal, Nu-Metal, Rock i Elektronika, a każda sekcja zawiera listę wybranych artystów i zespołów, Klikając na nazwę artysty, możesz zapoznać się z krótką biografią oraz odwiedzić oficjalną stronę internetową danego wykonawcy.</p>
+    </section>
+    <footer>
+        <p>Tomasz Ciurkowski 2024 EiT 203191</p>
+    </footer>
+</body>
+</html>

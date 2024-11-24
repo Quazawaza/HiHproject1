@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Kontaktowa</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        form {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        form input, form select, form textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #333;
+            border: 1px solid #ffffff;
+            border-radius: px;
+            color: white;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #464646;
+            border: none;
+            color: white;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        form button[type="reset"] {
+            background-color: #000000;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+        .gender-options {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+
+        .gender-option {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header style="height: 20vh;">
+        <h1>Formularz Kontaktowy</h1>
+    </header>
+    <nav> 
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>     
+        <ul>
+            <li class="dropdown">
+                <a href="index.html">Strona Główna</a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html#metak">Metal</a></li>
+                    <li><a href="index.html#nu-metal">Nu-Metal</a></li>
+                    <li><a href="index.html#rock">Rock</a></li>
+                    <li><a href="index.html#elektroniczna">Elektroniczna</a></li>
+                </ul>
+            </li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="about.html">O Stronie</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form action="" method="">
+            <h2>Wypełnij formularz:</h2>
+            
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label>Wybierz płeć:</label>
+            <div class="gender-options">
+                <div class="gender-option">
+                    <input type="radio" id="male" name="gender" value="Mężczyzna">
+                    <label for="male">Mężczyzna</label>
+                </div>
+                <div class="gender-option">
+                    <input type="radio" id="female" name="gender" value="Kobieta">
+                    <label for="female">Kobieta</label>
+                </div>
+            </div>
+            <br>
+            
+
+            <label for="age">Wiek:</label>
+            <select id="age" name="age">
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46+">46+</option>
+            </select>
+
+            <label for="feedback">Opinia:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+
+            <button type="submit">Wyślij</button>
+
+
+            <button type="reset">Wyczyść</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 Strona Kontaktowa</p>
+    </footer>
+</body>
+</html>
