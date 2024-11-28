@@ -96,7 +96,6 @@
 
     <xs:complexType name="LinksType">
         <xs:sequence>
-
             <xs:element name="OficjalnaStrona">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
