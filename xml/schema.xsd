@@ -52,6 +52,13 @@
 
     <xs:element name="Genre" type="GenreType"/>
 
+    <xs:group name="SocialsGroup">
+        <xs:sequence>
+            <xs:element name="Page" type="LinkType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="YouTube" type="LinkType" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:group>
+
 
     <xs:complexType name="InstrumentListType">
         <xs:sequence>
@@ -85,14 +92,7 @@
         </xs:sequence>
         <xs:attribute name="role">
             <xs:simpleType>
-                <xs:restriction base="xs:string">
-                    <xs:enumeration value="Wokalista"/>
-                    <xs:enumeration value="Gitarzysta"/>
-                    <xs:enumeration value="Basista"/>
-                    <xs:enumeration value="Perkusista"/>
-                    <xs:enumeration value="Klawiszowiec"/>
-                    <xs:enumeration value="Inna"/>
-                </xs:restriction>
+                <xs:list itemType="xs:string"/>
             </xs:simpleType>
         </xs:attribute>
         <xs:attribute ref="JestKultowy"/>
@@ -123,17 +123,10 @@
             </xs:element>
             <xs:element ref="Genre"/>
             <xs:element name="Description" type="DescriptionType"/>
-            <xs:group ref="SocialsGroup"/>
+            <xs:group ref="SocialsGroup" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
         <xs:attribute ref="JestKultowy"/>
     </xs:complexType>
-
-    <xs:group name="SocialsGroup">
-        <xs:sequence>
-            <xs:element name="Page" type="LinkType" minOccurs="0"/>
-            <xs:element name="Youtube" type="LinkType" minOccurs="0"/>
-        </xs:sequence>
-    </xs:group>
 
     <xs:complexType name="ExtendedBandType">
         <xs:complexContent>
