@@ -10,7 +10,7 @@
 
     <xs:simpleType name="LinkType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="(https?://.+|(\.\/|\.\.\/).+|[a-zA-Z]:\\.+)"/>
+            <xs:pattern value="https?://.+"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -44,10 +44,18 @@
         </xs:restriction>
     </xs:simpleType>
 
+    <xs:simpleType name="LinkOrImage">
+        <xs:union memberTypes="LinkType xs:string"/>
+    </xs:simpleType>
+
+    <xs:attribute name="JestKultowy" type="xs:boolean"/>
+
+    <xs:element name="Genre" type="GenreType"/>
+
 
     <xs:complexType name="InstrumentListType">
         <xs:sequence>
-            <xs:element name="Instrument" type="InstrumentType" maxOccurs="unbounded"/>
+            <xs:element name="Instrument" type="InstrumentType" maxOccurs="6"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -55,23 +63,25 @@
         <xs:sequence>
             <xs:element name="Title" type="NameType"/>
             <xs:element name="Year" type="YearType"/>
-            <xs:element name="Cover" type="LinkType"/>
+            <xs:element name="Cover" type="LinkOrImage"/>
         </xs:sequence>
         <xs:attribute name="EPka" type="xs:boolean" use="optional"/>
+        <xs:attribute ref="JestKultowy"/>
     </xs:complexType>
 
     <xs:complexType name="MemberType">
         <xs:sequence>
-            <xs:element name="Name" type="NameType"/>
+            <xs:choice>
+                <xs:element name="Name" type="NameType"/>
+                <xs:element name="Nickname" type="NameType"/>
+            </xs:choice>
             <xs:element name="Instruments" type="InstrumentListType"/>
             <xs:element name="YearsActive">
                 <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:pattern value="\d{4}(-\d{4}|-teraz)?"/>
-                    </xs:restriction>
+                    <xs:union memberTypes="xs:int xs:string"/>
                 </xs:simpleType>
             </xs:element>
-            <xs:element name="Photo" type="LinkType"/>
+            <xs:element name="Photo" type="LinkOrImage"/>
         </xs:sequence>
         <xs:attribute name="role">
             <xs:simpleType>
@@ -85,13 +95,14 @@
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
+        <xs:attribute ref="JestKultowy"/>
     </xs:complexType>
 
     <xs:complexType name="LinksType">
-        <xs:sequence>
+        <xs:all>
             <xs:element name="OfficialWebsite" type="LinkType"/>
             <xs:element name="YouTubeChannel" type="LinkType"/>
-        </xs:sequence>
+        </xs:all>
     </xs:complexType>
 
     <xs:complexType name="BandType">
@@ -110,10 +121,11 @@
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
-            <xs:element name="Genre" type="GenreType"/>
+            <xs:element ref="Genre"/>
             <xs:element name="Description" type="DescriptionType"/>
             <xs:group ref="SocialsGroup"/>
         </xs:sequence>
+        <xs:attribute ref="JestKultowy"/>
     </xs:complexType>
 
     <xs:group name="SocialsGroup">
@@ -122,13 +134,6 @@
             <xs:element name="Youtube" type="LinkType" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
-
-
-    <xs:complexType name="ContactType">
-        <xs:sequence>
-            <xs:group ref="ContactGroup"/>
-        </xs:sequence>
-    </xs:complexType>
 
     <xs:complexType name="ExtendedBandType">
         <xs:complexContent>
