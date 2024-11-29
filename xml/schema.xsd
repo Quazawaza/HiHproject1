@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
-    <xs:simpleType name="LinkType">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="https?://.+"/>
-        </xs:restriction>
-    </xs:simpleType>
-
     <xs:simpleType name="YearType">
         <xs:restriction base="xs:gYear">
             <xs:minInclusive value="1900"/>
             <xs:maxInclusive value="2025"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="LinkType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(https?://.+|(\.\/|\.\.\/).+|[a-zA-Z]:\\.+)"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -28,36 +28,7 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="InstrumentType">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Gitara"/>
-            <xs:enumeration value="Bas"/>
-            <xs:enumeration value="Perkusja"/>
-            <xs:enumeration value="Wokale"/>
-            <xs:enumeration value="Keyboard"/>
-            <xs:enumeration value="Inne"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="ImageType">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="https?://.+\.(jpg|jpeg|png)"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="LogoType">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="https?://.+\.(svg|png|avif)"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="AlbumCountType">
-        <xs:restriction base="xs:int">
-            <xs:minInclusive value="0"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="MusicGenreType">
+    <xs:simpleType name="GenreType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Metal"/>
             <xs:enumeration value="Nu-Metal"/>
@@ -66,135 +37,115 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="MemberStatusType">
+    <xs:simpleType name="InstrumentType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="Obecny"/>
-            <xs:enumeration value="Byly"/>
+            <xs:minLength value="1"/>
+            <xs:maxLength value="50"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:complexType name="AlbumType">
+
+    <xs:complexType name="InstrumentListType">
         <xs:sequence>
-            <xs:element name="Tytul">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:minLength value="1"/>
-                        <xs:maxLength value="200"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="Rok" type="YearType"/>
-            <xs:element name="Cover" type="ImageType"/>
+            <xs:element name="Instrument" type="InstrumentType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="MembersListType">
+    <xs:complexType name="AlbumType">
         <xs:sequence>
-            <xs:element name="Czlonek" type="MemberType" maxOccurs="unbounded"/>
+            <xs:element name="Title" type="NameType"/>
+            <xs:element name="Year" type="YearType"/>
+            <xs:element name="Cover" type="LinkType"/>
         </xs:sequence>
+        <xs:attribute name="EPka" type="xs:boolean" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="MemberType">
+        <xs:sequence>
+            <xs:element name="Name" type="NameType"/>
+            <xs:element name="Instruments" type="InstrumentListType"/>
+            <xs:element name="YearsActive">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{4}(-\d{4}|-teraz)?"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Photo" type="LinkType"/>
+        </xs:sequence>
+        <xs:attribute name="role">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Wokalista"/>
+                    <xs:enumeration value="Gitarzysta"/>
+                    <xs:enumeration value="Basista"/>
+                    <xs:enumeration value="Perkusista"/>
+                    <xs:enumeration value="Klawiszowiec"/>
+                    <xs:enumeration value="Inna"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
 
     <xs:complexType name="LinksType">
         <xs:sequence>
-            <xs:element name="OficjalnaStrona">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:pattern value="https?://.+"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="KanalYT">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:pattern value="https?://(www\.)?youtube\.com/.+"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
+            <xs:element name="OfficialWebsite" type="LinkType"/>
+            <xs:element name="YouTubeChannel" type="LinkType"/>
         </xs:sequence>
     </xs:complexType>
 
-
-    <xs:complexType name="AlbumListType">
+    <xs:complexType name="BandType">
         <xs:sequence>
-            <xs:element name="Album">
+            <xs:element name="Members">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="Tytul" type="NameType"/>
-                        <xs:element name="Rok" type="YearType"/>
-                        <xs:element name="Cover" type="ImageType"/>
+                        <xs:element name="Member" type="MemberType" maxOccurs="unbounded"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="Albums">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Album" type="AlbumType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Genre" type="GenreType"/>
+            <xs:element name="Description" type="DescriptionType"/>
+            <xs:group ref="SocialsGroup"/>
         </xs:sequence>
     </xs:complexType>
 
-<xs:complexType name="MemberType">
-  <xs:sequence>
-    <xs:element name="Imie" type="NameType"/>
-    <xs:element name="Nazwisko" type="NameType"/>
-    <xs:element name="Instrumenty" maxOccurs="unbounded">
-        <xs:simpleType>
-            <xs:restriction base="xs:string">
-                <xs:enumeration value="Gitara"/>
-                <xs:enumeration value="Bas"/>
-                <xs:enumeration value="Perkusja"/>
-                <xs:enumeration value="Wokale"/>
-                <xs:enumeration value="Keyboard"/>
-                <xs:enumeration value="Inne"/>
-            </xs:restriction>
-        </xs:simpleType>
-    </xs:element>
-    <xs:element name="LataAktywnosci" type="xs:string"/>
-    <xs:element name="Zdjecie" type="LinkType"/>
-  </xs:sequence>
-</xs:complexType>
+    <xs:group name="SocialsGroup">
+        <xs:sequence>
+            <xs:element name="Page" type="LinkType" minOccurs="0"/>
+            <xs:element name="Youtube" type="LinkType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
 
-<xs:complexType name="BandType">
-  <xs:sequence>
-    <xs:element name="Czlonkowie">
+
+    <xs:complexType name="ContactType">
+        <xs:sequence>
+            <xs:group ref="ContactGroup"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ExtendedBandType">
+        <xs:complexContent>
+            <xs:extension base="BandType">
+                <xs:sequence>
+                    <xs:element name="Awards" type="xs:string" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="Bands">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="Czlonek">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Imie" type="NameType"/>
-                            <xs:element name="Nazwisko" type="NameType"/>
-                            <xs:element name="Instrumenty" type="InstrumentType" maxOccurs="unbounded"/>
-                            <xs:element name="LataAktywnosci">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="\d{4}-\d{4}|\d{4}-obecnie"/>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <xs:element name="Zdjecie" type="LinkType"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="Band" type="BandType" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="Albumy">
-      <xs:complexType>
-        <xs:sequence>
-          <xs:element name="Album" type="AlbumType" maxOccurs="unbounded"/>
-        </xs:sequence>
-      </xs:complexType>
-    </xs:element>
-  </xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="ArtistType">
-  <xs:sequence>
-    <xs:element name="Czlonek" type="MemberType" maxOccurs="1"/>
-    <xs:element name="Albumy">
-      <xs:complexType>
-        <xs:sequence>
-          <xs:element name="Album" type="AlbumType" maxOccurs="unbounded"/>
-        </xs:sequence>
-      </xs:complexType>
-    </xs:element>
-  </xs:sequence>
-</xs:complexType>
 
 </xs:schema>
