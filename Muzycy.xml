@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bands xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <Band JestKultowy="true">
+        <Members>
+            <Member role="Wokalista" JestKultowy="true">
+                <Name>Emily Armstrong</Name>
+                <Instruments>
+                    <Instrument>Wokal prowadzący</Instrument>
+                </Instruments>
+                <YearsActive>2024-Present</YearsActive>
+                <Photo>../refs/LinkinPark/members/emily.jpg</Photo>
+            </Member>
+            <Member role="Wokalista, Rap, gitara rytmiczna, Keyboard, Programowanie" JestKultowy="true">
+                <Name>Mike Shinoda</Name>
+                <Instruments>
+                    <Instrument>Wokal wspierający</Instrument>
+                    <Instrument>Rap</Instrument>
+                    <Instrument>gitara rytmiczna</Instrument>
+                    <Instrument>Keyboard</Instrument>
+                    <Instrument>Programowanie</Instrument>
+                </Instruments>
+                <YearsActive>1996-Present</YearsActive>
+                <Photo>../refs/LinkinPark/members/mike.jpg</Photo>
+            </Member>
+            <Member role="gitara prowadząca, gitara rytmiczna, Programowanie" JestKultowy="true">
+                <Name>Brad Delson</Name>
+                <Instruments>
+                    <Instrument>gitara prowadząca</Instrument>
+                    <Instrument>gitara rytmiczna</Instrument>
+                    <Instrument>Programowanie</Instrument>
+                </Instruments>
+                <YearsActive>1996-Present</YearsActive>
+                <Photo>../refs/LinkinPark/members/brad.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="true">
+                <Name>Dave Farrell</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1996-Present</YearsActive>
+                <Photo>../refs/LinkinPark/members/dave.jpg</Photo>
+            </Member>
+            <Member role="DJ, Turnatablizm, Klawiszowiec" JestKultowy="true">
+                <Name>Joe Hahn</Name>
+                <Instruments>
+                    <Instrument>DJ</Instrument>
+                    <Instrument>Turnatablizm</Instrument>
+                    <Instrument>Klawiszowiec</Instrument>
+                </Instruments>
+                <YearsActive>1996-Present</YearsActive>
+                <Photo>../refs/LinkinPark/members/hahn.jpg</Photo>
+            </Member>
+            <Member role="Perkusja" JestKultowy="false">
+                <Name>Collin Brittain</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                </Instruments>
+                <YearsActive>2024-Present</YearsActive>
+                <Photo>../refs/LinkinPark/members/collin.jpg</Photo>
+            </Member>
+
+            <Member role="Wokalista" JestKultowy="true">
+                <Name>Chester Bennington</Name>
+                <Instruments>
+                    <Instrument>Wokal prowadzący</Instrument>
+                </Instruments>
+                <YearsActive>1999-2017</YearsActive>
+                <Photo>../refs/LinkinPark/members/chester.jpg</Photo>
+            </Member>
+            <Member role="Perkusja, Instrumenty perkusyjne" JestKultowy="true">
+                <Name>Rob Bourdon</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                    <Instrument>Instrumenty perkusyjne</Instrument>
+                </Instruments>
+                <YearsActive>1996-2024</YearsActive>
+                <Photo>../refs/LinkinPark/members/rob.jpg</Photo>
+            </Member>
+            <Member role="Wokalista" JestKultowy="false">
+                <Name>Mark Wakefield</Name>
+                <Instruments>
+                    <Instrument>Wokal prowadzący</Instrument>
+                </Instruments>
+                <YearsActive>1996-1998</YearsActive>
+                <Photo>../refs/LinkinPark/members/mark.jpg</Photo>
+            </Member>
+        </Members>
+        <Albums>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Hybrid Theory</Title>
+                <Year>2000</Year>
+                <Cover>../refs/LinkinPark/albums/hybridtheory.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Meteora</Title>
+                <Year>2003</Year>
+                <Cover>../refs/LinkinPark/albums/meteora.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Minutes to Midnight</Title>
+                <Year>2007</Year>
+                <Cover>../refs/LinkinPark/albums/minutestomidnight.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>A Thousand Suns</Title>
+                <Year>2010</Year>
+                <Cover>../refs/LinkinPark/albums/athousandsuns.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Living Things</Title>
+                <Year>2012</Year>
+                <Cover>../refs/LinkinPark/albums/livingthings.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>The Hunting Party</Title>
+                <Year>2014</Year>
+                <Cover>../refs/LinkinPark/albums/thehuntingparty.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>One More Light</Title>
+                <Year>2017</Year>
+                <Cover>../refs/LinkinPark/albums/onemorelight.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>From Zero</Title>
+                <Year>2024</Year>
+                <Cover>../refs/LinkinPark/albums/fromzero.jpg</Cover>
+            </Album>
+        </Albums>
+        <Genre>Nu-Metal</Genre>
+        <Description>Linkin Park - amerykański zespół muzyczny wykonujący szeroko pojętą muzykę rockową i metalową. Powstał w 1996 roku w Agoura Hills w Kalifornii, a sławę zyskał w 2000 roku po wydaniu pierwszego albumu, Hybrid Theory. Od tego czasu Linkin Park stali się jedną z najpopularniejszych grup w historii muzyki.</Description>
+        <Page>https://www.linkinpark.com</Page>
+        <YouTube>https://www.youtube.com/channel/UCZU9T1ceaOgwfLRq7OKFU4Q</YouTube>
+    </Band>
+        <Band JestKultowy="true">
+        <Members>
+            <Member role="Wokal, gitara rytmiczna" JestKultowy="true">
+                <Name>James Hetfield</Name>
+                <Instruments>
+                    <Instrument>Wokal</Instrument>
+                    <Instrument>gitara rytmiczna</Instrument>
+                </Instruments>
+                <YearsActive>1981-Present</YearsActive>
+                <Photo>../refs/metallica/members/Hetfield.jpg</Photo>
+            </Member>
+            <Member role="Perkusja" JestKultowy="true">
+                <Name>Lars Ulrich</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                </Instruments>
+                <YearsActive>1981-Present</YearsActive>
+                <Photo>../refs/metallica/members/Ulrich.jpg</Photo>
+            </Member>
+            <Member role="gitara prowadząca" JestKultowy="true">
+                <Name>Kirk Hammett</Name>
+                <Instruments>
+                    <Instrument>gitara prowadząca</Instrument>
+                </Instruments>
+                <YearsActive>1983-Present</YearsActive>
+                <Photo>../refs/metallica/members/Hammet.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="false">
+                <Name>Robert Trujillo</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>2003-Present</YearsActive>
+                <Photo>../refs/metallica/members/Trujillo.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="true">
+                <Name>Cliff Burton</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1982–1986</YearsActive>
+                <Photo>../refs/metallica/members/burton.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="false">
+                <Name>Jason Newsted</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1986–2001</YearsActive>
+                <Photo>../refs/metallica/members/newsted.jpg</Photo>
+            </Member>
+            <Member role="gitara prowadząca" JestKultowy="true">
+                <Name>Dave Mustaine</Name>
+                <Instruments>
+                    <Instrument>gitara prowadząca</Instrument>
+                </Instruments>
+                <YearsActive>1981–1983</YearsActive>
+                <Photo>../refs/metallica/members/mustaine.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="false">
+                <Name>Ron McGovney</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1981–1982</YearsActive>
+                <Photo>../refs/metallica/members/mcgovney.jpg</Photo>
+            </Member>
+        </Members>
+        <Albums>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Kill 'Em All</Title>
+                <Year>1983</Year>
+                <Cover>../refs/metallica/albums/killemall.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Ride the Lightning</Title>
+                <Year>1984</Year>
+                <Cover>../refs/metallica/albums/ridethelightning.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Master of Puppets</Title>
+                <Year>1986</Year>
+                <Cover>../refs/metallica/albums/masterofpuppets_.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>...And Justice for All</Title>
+                <Year>1988</Year>
+                <Cover>../refs/metallica/albums/justiceforall.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Black Album</Title>
+                <Year>1991</Year>
+                <Cover>../refs/metallica/albums/blackalbum.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Load</Title>
+                <Year>1996</Year>
+                <Cover>../refs/metallica/albums/load.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Reload</Title>
+                <Year>1997</Year>
+                <Cover>../refs/metallica/albums/reload.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>St. Anger</Title>
+                <Year>2003</Year>
+                <Cover>../refs/metallica/albums/stanger.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Death Magnetic</Title>
+                <Year>2008</Year>
+                <Cover>../refs/metallica/albums/deathmagnetic.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Hardwired...To Self-Destruct</Title>
+                <Year>2016</Year>
+                <Cover>../refs/metallica/albums/hardwired.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>72 Seasons</Title>
+                <Year>2023</Year>
+                <Cover>../refs/metallica/albums/72seasons.jpg</Cover>
+            </Album>
+        </Albums>
+        <Genre>Metal</Genre>
+        <Description>Metallica – amerykański zespół heavymetalowy i thrashmetalowy założony w Los Angeles w Kalifornii w 1981 roku przez Jamesa Hetfielda i Larsa Ulricha. Uważany za jeden z najważniejszych, najbardziej wpływowych zespołów metalowych.</Description>
+        <Page>https://www.metallica.com</Page>
+        <YouTube>https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw</YouTube>
+    </Band>
+        <Band>
+        <Members>
+            <Member role="gitara" JestKultowy="true">
+                <Name>Tony Iommi</Name>
+                <Instruments>
+                    <Instrument>gitara</Instrument>
+                </Instruments>
+                <YearsActive>1968</YearsActive>
+                <Photo>../refs/blacksabbath/members/tonyiommi.jpg</Photo>
+            </Member>
+            <Member role="Wokal" JestKultowy="true">
+                <Name>Ozzy Osbourne</Name>
+                <Instruments>
+                    <Instrument>Wokal</Instrument>
+                </Instruments>
+                <YearsActive>1968</YearsActive>
+                <Photo>../refs/blacksabbath/members/ozzyosbourne.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="true">
+                <Name>Geezer Butler</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1968</YearsActive>
+                <Photo>../refs/blacksabbath/members/geezerbutler.jpg</Photo>
+            </Member>
+            <Member role="Perkusja" JestKultowy="true">
+                <Name>Bill Ward</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                </Instruments>
+                <YearsActive>1968–1980, 1982–1983, 1985, 1994, 1997–2006, 2011–2012</YearsActive>
+                <Photo>../refs/blacksabbath/members/billward.jpg</Photo>
+            </Member>
+            <Member role="Wokalista" JestKultowy="false">
+                <Name>Dave Walker</Name>
+                <Instruments>
+                    <Instrument>Wokalista</Instrument>
+                </Instruments>
+                <YearsActive>1977</YearsActive>
+                <Photo>../refs/blacksabbath/members/davewalker.jpg</Photo>
+            </Member>
+            <Member role="Wokalista" JestKultowy="true">
+                <Name>Ronnie James Dio</Name>
+                <Instruments>
+                    <Instrument>Wokalista</Instrument>
+                </Instruments>
+                <YearsActive>1979–1982, 1991–1992, 2006</YearsActive>
+                <Photo>../refs/blacksabbath/members/ronniejamesdio.jpg</Photo>
+            </Member>
+            <Member role="Klawiszowiec, gitara basowa" JestKultowy="false">
+                <Name>Geoff Nicholls</Name>
+                <Instruments>
+                    <Instrument>Klawiszowiec</Instrument>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1980–2004</YearsActive>
+                <Photo>../refs/blacksabbath/members/geoffnicholls.jpg</Photo>
+            </Member>
+            <Member role="Perkusja" JestKultowy="false">
+                <Name>Vinny Appice</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                </Instruments>
+                <YearsActive>1980–1982, 1991–1992, 1998, 2006</YearsActive>
+                <Photo>../refs/blacksabbath/members/vinnyappice.jpg</Photo>
+            </Member>
+            <Member role="Wokalista" JestKultowy="false">
+                <Name>Ian Gillan</Name>
+                <Instruments>
+                    <Instrument>Wokalista</Instrument>
+                </Instruments>
+                <YearsActive>1982–1984</YearsActive>
+                <Photo>../refs/blacksabbath/members/iangillan.jpg</Photo>
+            </Member>
+            <Member role="Perkusja" JestKultowy="false">
+                <Name>Bev Bevan</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                </Instruments>
+                <YearsActive>1983–1984, 1987</YearsActive>
+                <Photo>../refs/blacksabbath/members/bevbevan.jpg</Photo>
+            </Member>
+            <Member role="Wokalista" JestKultowy="false">
+                <Name>David Donato</Name>
+                <Instruments>
+                    <Instrument>Wokalista</Instrument>
+                </Instruments>
+                <YearsActive>1984–1985</YearsActive>
+                <Photo>../refs/blacksabbath/members/daviddonato.jpg</Photo>
+            </Member>
+            <Member role="Perkusja" JestKultowy="false">
+                <Name>Eric Singer</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                </Instruments>
+                <YearsActive>1985–1987</YearsActive>
+                <Photo>../refs/blacksabbath/members/ericsinger.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="false">
+                <Name>Dave Spitz</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1985–1986, 1987</YearsActive>
+                <Photo>../refs/blacksabbath/members/davespitz.jpg</Photo>
+            </Member>
+            <Member role="Wokalista" JestKultowy="false">
+                <Name>Glenn Hughes</Name>
+                <Instruments>
+                    <Instrument>Wokalista</Instrument>
+                </Instruments>
+                <YearsActive>1985–1986</YearsActive>
+                <Photo>../refs/blacksabbath/members/glennhughes.jpg</Photo>
+            </Member>
+            <Member role="Wokalista" JestKultowy="false">
+                <Name>Ray Gillen</Name>
+                <Instruments>
+                    <Instrument>Wokalista</Instrument>
+                </Instruments>
+                <YearsActive>1986–1987</YearsActive>
+                <Photo>../refs/blacksabbath/members/raygillen.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="false">
+                <Name>Bob Daisley</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1986</YearsActive>
+                <Photo>../refs/blacksabbath/members/bobdaisley.jpg</Photo>
+            </Member>
+            <Member role="Wokalista" JestKultowy="false">
+                <Name>Tony Martin</Name>
+                <Instruments>
+                    <Instrument>Wokalista</Instrument>
+                </Instruments>
+                <YearsActive>1987–1991, 1993–1997</YearsActive>
+                <Photo>../refs/blacksabbath/members/tonymartin.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="false">
+                <Name>Joe Burt</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1987</YearsActive>
+                <Photo>../refs/blacksabbath/members/joeburt.jpg</Photo>
+            </Member>
+            <Member role="Perkusja" JestKultowy="false">
+                <Name>Cozy Powell</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                </Instruments>
+                <YearsActive>1988–1991, 1994–1995</YearsActive>
+                <Photo>../refs/blacksabbath/members/cozypowell.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="false">
+                <Name>Laurence Cottle</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1988–1989</YearsActive>
+                <Photo>../refs/blacksabbath/members/laurencecottle.jpg</Photo>
+            </Member>
+            <Member role="gitara basowa" JestKultowy="false">
+                <Name>Neil Murray</Name>
+                <Instruments>
+                    <Instrument>gitara basowa</Instrument>
+                </Instruments>
+                <YearsActive>1989–1991, 1994–1995</YearsActive>
+                <Photo>../refs/blacksabbath/members/neilmurray.jpg</Photo>
+            </Member>
+            <Member role="Perkusja" JestKultowy="false">
+                <Name>Bobby Rondinelli</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                </Instruments>
+                <YearsActive>1993–1994, 1995</YearsActive>
+                <Photo>../refs/blacksabbath/members/bobbyrondinelli.jpg</Photo>
+            </Member>
+        </Members>
+        <Albums>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Black Sabbath</Title>
+                <Year>1970</Year>
+                <Cover>../refs/blacksabbath/albums/blacksabbath_1970.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Paranoid</Title>
+                <Year>1970</Year>
+                <Cover>../refs/blacksabbath/albums/paranoid_1970.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Master of Reality</Title>
+                <Year>1971</Year>
+                <Cover>../refs/blacksabbath/albums/master_of_reality_1971.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Vol. 4</Title>
+                <Year>1972</Year>
+                <Cover>../refs/blacksabbath/albums/vol_4_1972.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Sabbath Bloody Sabbath</Title>
+                <Year>1973</Year>
+                <Cover>../refs/blacksabbath/albums/sabbath_bloody_sabbath_1973.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Sabotage</Title>
+                <Year>1975</Year>
+                <Cover>../refs/blacksabbath/albums/sabotage_1975.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Technical Ecstasy</Title>
+                <Year>1976</Year>
+                <Cover>../refs/blacksabbath/albums/technical_ecstasy_1976.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Never Say Die!</Title>
+                <Year>1978</Year>
+                <Cover>../refs/blacksabbath/albums/never_say_die_1978.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Heaven and Hell</Title>
+                <Year>1980</Year>
+                <Cover>../refs/blacksabbath/albums/heaven_and_hell_1980.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Mob Rules</Title>
+                <Year>1981</Year>
+                <Cover>../refs/blacksabbath/albums/mob_rules_1981.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Born Again</Title>
+                <Year>1983</Year>
+                <Cover>../refs/blacksabbath/albums/born_again_1983.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Seventh Star</Title>
+                <Year>1986</Year>
+                <Cover>../refs/blacksabbath/albums/seventh_star_1986.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>The Eternal Idol</Title>
+                <Year>1987</Year>
+                <Cover>../refs/blacksabbath/albums/the_eternal_idol_1987.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Headless Cross</Title>
+                <Year>1989</Year>
+                <Cover>../refs/blacksabbath/albums/headless_cross_1989.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Tyr</Title>
+                <Year>1990</Year>
+                <Cover>../refs/blacksabbath/albums/tyr_1990.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Dehumanizer</Title>
+                <Year>1992</Year>
+                <Cover>../refs/blacksabbath/albums/dehumanizer_1992.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Cross Purposes</Title>
+                <Year>1994</Year>
+                <Cover>../refs/blacksabbath/albums/cross_purposes_1994.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Forbidden</Title>
+                <Year>1995</Year>
+                <Cover>../refs/blacksabbath/albums/forbidden_1995.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>13</Title>
+                <Year>2013</Year>
+                <Cover>../refs/blacksabbath/albums/13_2013.jpg</Cover>
+            </Album>
+        </Albums>
+        <Genre>Metal</Genre>
+        <Description>Black Sabbath to pionierzy heavy metalu, założeni w 1968 roku w Birmingham, Anglia. Zespół jest uważany za jeden z najbardziej wpływowych w historii muzyki rockowej. Ich muzyka, mroczna i pełna agresji, ukształtowała gatunek heavy metal. Zespół został rozwiązany w 2017 roku.</Description>
+        <Page>https://www.blacksabbath.com</Page>
+        <YouTube>https://www.youtube.com/channel/UCrx-X329UKv0Y06VhfpFVvw</YouTube>
+    </Band>
+        <Band>
+        <Members>
+            <Member role="wokalista" JestKultowy="true">
+                <Name>Oli Sykes</Name>
+                <Instruments>
+                    <Instrument>Wokal czysty</Instrument>
+                </Instruments>
+                <YearsActive>2004-</YearsActive>
+                <Photo>../refs/bringmethehorizon/members/olisykes.jpg</Photo>
+            </Member>
+            <Member role="gitara prowadząca" JestKultowy="false">
+                <Name>Lee Malia</Name>
+                <Instruments>
+                    <Instrument>gitara prowadząca</Instrument>
+                </Instruments>
+                <YearsActive>2004-</YearsActive>
+                <Photo>../refs/bringmethehorizon/members/leemalia.jpg</Photo>
+            </Member>
+            <Member role="gitara rytmiczna" JestKultowy="false">
+                <Name>Matt Kean</Name>
+                <Instruments>
+                    <Instrument>gitara rytmiczna</Instrument>
+                </Instruments>
+                <YearsActive>2004-</YearsActive>
+                <Photo>../refs/bringmethehorizon/members/mattkean.jpg</Photo>
+            </Member>
+            <Member role="perkusja" JestKultowy="false">
+                <Name>Matt Nicholls</Name>
+                <Instruments>
+                    <Instrument>Perkusja</Instrument>
+                </Instruments>
+                <YearsActive>2004-</YearsActive>
+                <Photo>../refs/bringmethehorizon/members/mattnicholls.jpg</Photo>
+            </Member>
+            <Member role="keyboard, syntezator, programowanie, wokal wspierający" JestKultowy="true">
+                <Name>Jordan Fish</Name>
+                <Instruments>
+                    <Instrument>Keyboard</Instrument>
+                    <Instrument>Syntezator</Instrument>
+                    <Instrument>Programowanie</Instrument>
+                    <Instrument>Wokal wspierający</Instrument>
+                </Instruments>
+                <YearsActive>2010-2023</YearsActive>
+                <Photo>../refs/bringmethehorizon/members/jordanfish.jpg</Photo>
+            </Member>
+            <Member role="gitara" JestKultowy="false">
+                <Name>Jona Weinhofen</Name>
+                <Instruments>
+                    <Instrument>gitara</Instrument>
+                    <Instrument>Wokal wspierający</Instrument>
+                </Instruments>
+                <YearsActive>2009-2013</YearsActive>
+                <Photo>../refs/bringmethehorizon/members/jonaweinhofen.jpg</Photo>
+            </Member>
+            <Member role="gitara" JestKultowy="false">
+                <Name>Curtis Ward</Name>
+                <Instruments>
+                    <Instrument>gitara</Instrument>
+                </Instruments>
+                <YearsActive>2004-2009</YearsActive>
+                <Photo>../refs/bringmethehorizon/members/curtisward.jpg</Photo>
+            </Member>
+        </Members>
+        <Albums>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Count Your Blessings</Title>
+                <Year>2006</Year>
+                <Cover>../refs/bringmethehorizon/albums/countyourblessings_2006.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Suicide Season</Title>
+                <Year>2008</Year>
+                <Cover>../refs/bringmethehorizon/albums/suicideseason_2008.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>There Is a Hell, Believe Me I’ve Seen It. There Is a Heaven, Let’s Keep It a Secret</Title>
+                <Year>2010</Year>
+                <Cover>../refs/bringmethehorizon/albums/thereisaghell_2010.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Sempiternal</Title>
+                <Year>2013</Year>
+                <Cover>../refs/bringmethehorizon/albums/sempiternal_2013.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>That`s a Spirit</Title>
+                <Year>2015</Year>
+                <Cover>../refs/bringmethehorizon/albums/thatsaspirit_2015.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>amo</Title>
+                <Year>2019</Year>
+                <Cover>../refs/bringmethehorizon/albums/amo_2019.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Post Human: Survival Horror</Title>
+                <Year>2020</Year>
+                <Cover>../refs/bringmethehorizon/albums/posthuman_survivalhorror_2020.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="false">
+                <Title>Post Human: NeX GEn</Title>
+                <Year>2024</Year>
+                <Cover>../refs/bringmethehorizon/albums/posthuman_nexgen_2024.jpg</Cover>
+            </Album>
+        </Albums>
+        <Genre>Metal</Genre>
+        <Description>Bring me the horizon – brytyjski zespół wykonujący szeroko pojętą muzykę metalową, założony w 2004 roku w Sheffield</Description>
+        <Page>https://www.bmthofficial.com/</Page>
+        <YouTube>https://www.youtube.com/@BringMeTheHorizon</YouTube>
+    </Band>
+        <Band>
+        <Members>
+            <Member role="syntezatory, programowanie, wokal" JestKultowy="true">
+                <Name>Thomas Bangalter</Name>
+                <Instruments>
+                    <Instrument>Syntezatory</Instrument>
+                    <Instrument>Programowanie</Instrument>
+                    <Instrument>Wokal</Instrument>
+                </Instruments>
+                <YearsActive>1993-</YearsActive>
+                <Photo>../refs/daftpunk/members/thomasbangalter.jpg</Photo>
+            </Member>
+            <Member role="syntezatory, programowanie, gitara basowa, wokal" JestKultowy="true">
+                <Name>Guy-Manuel de Homem-Christo</Name>
+                <Instruments>
+                    <Instrument>Syntezatory</Instrument>
+                    <Instrument>Programowanie</Instrument>
+                    <Instrument>Gitara basowa</Instrument>
+                    <Instrument>Wokal</Instrument>
+                </Instruments>
+                <YearsActive>1993-</YearsActive>
+                <Photo>../refs/daftpunk/members/guymanueldehommechristo.jpg</Photo>
+            </Member>
+        </Members>
+        <Albums>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Homework</Title>
+                <Year>1997</Year>
+                <Cover>../refs/daftpunk/albums/homework_1997.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Discovery</Title>
+                <Year>2001</Year>
+                <Cover>../refs/daftpunk/albums/discovery_2001.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Human After All</Title>
+                <Year>2005</Year>
+                <Cover>../refs/daftpunk/albums/humanafterall_2005.jpg</Cover>
+            </Album>
+            <Album EPka="false" JestKultowy="true">
+                <Title>Random Access Memories</Title>
+                <Year>2013</Year>
+                <Cover>../refs/daftpunk/albums/randomaccessmemories_2013.jpg</Cover>
+            </Album>
+        </Albums>
+        <Genre>Elektroniczna</Genre>
+        <Description>Daft Punk - francuski duet muzyki elektronicznej powstały w 1993 roku w Paryżu. Zaliczani często do najbardziej nowatorskich artystów w historii muzyki tanecznej.</Description>
+        <Page>https://www.daftpunk.com/</Page>
+        <YouTube>https://www.youtube.com/channel/UC_kRDKYrUlrbtrSiyu5Tflg</YouTube>
+    </Band>
+
+</Bands>
