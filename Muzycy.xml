@@ -611,42 +611,42 @@
             <Album EPka="false" JestKultowy="false">
                 <Title>Count Your Blessings</Title>
                 <Year>2006</Year>
-                <Cover>../refs/bringmethehorizon/albums/countyourblessings_2006.jpg</Cover>
+                <Cover>../refs/bringmethehorizon/albums/countyourblessings.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="false">
                 <Title>Suicide Season</Title>
                 <Year>2008</Year>
-                <Cover>../refs/bringmethehorizon/albums/suicideseason_2008.jpg</Cover>
+                <Cover>../refs/bringmethehorizon/albums/suicideseason.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="false">
                 <Title>There Is a Hell, Believe Me I’ve Seen It. There Is a Heaven, Let’s Keep It a Secret</Title>
                 <Year>2010</Year>
-                <Cover>../refs/bringmethehorizon/albums/thereisaghell_2010.jpg</Cover>
+                <Cover>../refs/bringmethehorizon/albums/thereisaghell.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="true">
                 <Title>Sempiternal</Title>
                 <Year>2013</Year>
-                <Cover>../refs/bringmethehorizon/albums/sempiternal_2013.jpg</Cover>
+                <Cover>../refs/bringmethehorizon/albums/sempiternal.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="true">
                 <Title>That`s a Spirit</Title>
                 <Year>2015</Year>
-                <Cover>../refs/bringmethehorizon/albums/thatsaspirit_2015.jpg</Cover>
+                <Cover>../refs/bringmethehorizon/albums/thatsaspirit.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="false">
                 <Title>amo</Title>
                 <Year>2019</Year>
-                <Cover>../refs/bringmethehorizon/albums/amo_2019.jpg</Cover>
+                <Cover>../refs/bringmethehorizon/albums/amo.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="true">
                 <Title>Post Human: Survival Horror</Title>
                 <Year>2020</Year>
-                <Cover>../refs/bringmethehorizon/albums/posthuman_survivalhorror_2020.jpg</Cover>
+                <Cover>../refs/bringmethehorizon/albums/posthuman_survivalhorror.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="false">
                 <Title>Post Human: NeX GEn</Title>
                 <Year>2024</Year>
-                <Cover>../refs/bringmethehorizon/albums/posthuman_nexgen_2024.jpg</Cover>
+                <Cover>../refs/bringmethehorizon/albums/posthuman_nexgen.jpg</Cover>
             </Album>
         </Albums>
         <Genre>Metal</Genre>
@@ -675,29 +675,29 @@
                     <Instrument>Wokal</Instrument>
                 </Instruments>
                 <YearsActive>1993-</YearsActive>
-                <Photo>../refs/daftpunk/members/guymanueldehommechristo.jpg</Photo>
+                <Photo>../refs/DaftPunk/members/guymanuel.jpg</Photo>
             </Member>
         </Members>
         <Albums>
             <Album EPka="false" JestKultowy="true">
                 <Title>Homework</Title>
                 <Year>1997</Year>
-                <Cover>../refs/daftpunk/albums/homework_1997.jpg</Cover>
+                <Cover>../refs/DaftPunk/albums/homework.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="true">
                 <Title>Discovery</Title>
                 <Year>2001</Year>
-                <Cover>../refs/daftpunk/albums/discovery_2001.jpg</Cover>
+                <Cover>../refs/DaftPunk/albums/discovery.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="true">
                 <Title>Human After All</Title>
                 <Year>2005</Year>
-                <Cover>../refs/daftpunk/albums/humanafterall_2005.jpg</Cover>
+                <Cover>../refs/DaftPunk/albums/humanafterall.jpg</Cover>
             </Album>
             <Album EPka="false" JestKultowy="true">
                 <Title>Random Access Memories</Title>
                 <Year>2013</Year>
-                <Cover>../refs/daftpunk/albums/randomaccessmemories_2013.jpg</Cover>
+                <Cover>../refs/DaftPunk/albums/RAM.jpg</Cover>
             </Album>
         </Albums>
         <Genre>Elektroniczna</Genre>
